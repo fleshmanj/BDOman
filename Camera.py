@@ -1,5 +1,6 @@
 import pydirectinput as pyd
 
+
 class Camera():
 
     def __int__(self):

@@ -53,7 +53,6 @@ def find_object(w, h, top, left, image):
 
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
     if max_val >= .80:
-        print("found object")
         return True
 
 

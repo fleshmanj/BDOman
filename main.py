@@ -20,4 +20,4 @@ while True:
     fisherman.start_fishing()
     time.sleep(1)
     fisherman.play_minigame()
-    time.sleep(5)
+

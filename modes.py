@@ -35,16 +35,19 @@ class Fishing:
             catching = False
             while fishing:
                 if find_object(300, 300, 800, 300, image="assets/space.png") is True:
+                    print("Found space")
                     pyd.press("space")
                     catching = True
                     fishing = False
             while catching:
-                if find_object(300, 300, 800, 300, image="assets/fish_on.png") is True:
+                if find_object(300, 300, 900, 400, image="assets/fish_on.png") is True:
+                    print("Found fish on")
+                    time.sleep(1)
                     pyd.keyDown("space")
                     time.sleep(.01)
                     pyd.keyUp("space")
                     catching = False
-                    time.sleep(1)
+                    time.sleep(1.4)
                     pyd.keyDown("space")
                     time.sleep(.01)
                     pyd.keyUp("space")
@@ -84,4 +87,8 @@ class Fishing:
                 for i in sequence:
                     pyd.press(i)
                 break
+        time.sleep(5)
+        pyd.keyDown("r")
+        time.sleep(.01)
+        pyd.keyUp("r")
 

@@ -1,7 +1,7 @@
 import pydirectinput as pyd
 
 
-class Camera():
+class Camera:
 
     def __int__(self):
         self.self = self

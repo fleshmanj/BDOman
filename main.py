@@ -1,11 +1,6 @@
-from PIL import ImageGrab
 import time
-import pyautogui
-import pydirectinput as pyd
-from Camera import Camera
-import utils
-import ComputerVision
-
+import sys
+import modes
 
 """
 Write only one statement per line.
@@ -16,6 +11,13 @@ Conditions and loops must be specified well ie. begun and ended explicity as in 
 """
 
 
-if __name__ == "__main__":
-    while True:
-        ComputerVision.find_object()
+
+print("starting program")
+time.sleep(2)
+fisherman = modes.Fishing()
+print("starting fishing")
+while True:
+    fisherman.start_fishing()
+    time.sleep(1)
+    fisherman.play_minigame()
+    time.sleep(5)

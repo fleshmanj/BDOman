@@ -12,7 +12,7 @@ class Camera:
         print(originx)
         pyd.mouseDown(button="right")
         print(pyd.position())
-        pyd.move(-1155, 0)
+        pyd.move(-640, 0)
         print(pyd.position())
         pyd.mouseUp(button="right")
 
